@@ -1,0 +1,336 @@
+{
+  "name": "Divination Alerts 1.00",
+  "baseName": "archaeology",
+  "alerters": [
+    {
+      "name": "Lobby timer",
+      "globalalarm": false,
+      "alarm": {
+        "sound": "upload:ec8ut:RuneScape 3 Main Theme",
+        "repeat": false
+      },
+      "voice": null,
+      "tooltip": "About to get lobbied",
+      "exportbar": true,
+      "delay": 830,
+      "type": "inactive"
+    },
+    {
+      "name": "Full Inventory",
+      "globalalarm": false,
+      "alarm": { "sound": "upload:edda3:Inventory Full Male", "repeat": false },
+      "voice": null,
+      "tooltip": "Inventory Full",
+      "exportbar": true,
+      "type": "dialogtextsimple"
+    },
+    {
+      "name": "Guthix Butterfly",
+      "globalalarm": false,
+      "alarm": { "sound": "upload:edpv5:Wing Flap", "repeat": false },
+      "voice": null,
+      "tooltip": "Guthix Butterfly",
+      "exportbar": true,
+      "resetonactive": true,
+      "lines": [
+        {
+          "text": "A Guthixian Butterfiy blossoms into existence. ",
+          "percent": 100
+        }
+      ],
+      "colors": [[0, 255, 0]],
+      "type": "chat"
+    },
+    {
+      "name": "Seren spirit",
+      "globalalarm": false,
+      "alarm": null,
+      "voice": null,
+      "tooltip": "Seren spirit",
+      "exportbar": true,
+      "resetonactive": true,
+      "lines": [{ "text": "A Seren spirit appears", "percent": 100 }],
+      "colors": [[0, 255, 255]],
+      "type": "chat"
+    },
+    {
+      "name": "",
+      "globalalarm": false,
+      "alarm": null,
+      "voice": null,
+      "tooltip": null,
+      "exportbar": false,
+      "resetonactive": false,
+      "lines": [],
+      "colors": [
+        [255, 255, 255],
+        [193, 15, 6]
+      ],
+      "type": "chat"
+    },
+    {
+      "name": "Divination Potion",
+      "globalalarm": false,
+      "alarm": { "sound": "upload:edpup:Spell Debuff", "repeat": false },
+      "voice": null,
+      "tooltip": null,
+      "exportbar": false,
+      "resetonactive": false,
+      "lines": [
+        { "text": "potion is about to wear off", "percent": 100 },
+        { "text": "You drink some of your", "percent": 0 }
+      ],
+      "colors": [
+        [0, 255, 0],
+        [255, 255, 255],
+        [255, 140, 56]
+      ],
+      "type": "chat"
+    },
+    {
+      "name": "Aura Alert",
+      "globalalarm": false,
+      "alarm": { "sound": "upload:ec85g:Aura", "repeat": false },
+      "voice": null,
+      "tooltip": null,
+      "exportbar": true,
+      "resetonactive": false,
+      "lines": [
+        { "text": "Your aura will deplete in 1 minute", "percent": 100 },
+        { "text": "Your aura has depleted", "percent": 0 }
+      ],
+      "colors": [
+        [255, 255, 255],
+        [255, 204, 0],
+        [127, 169, 255]
+      ],
+      "type": "chat"
+    },
+    {
+      "name": "",
+      "globalalarm": false,
+      "alarm": null,
+      "voice": null,
+      "tooltip": null,
+      "exportbar": false,
+      "type": "dialogtextsimple"
+    },
+    {
+      "name": "Prayer Alert",
+      "globalalarm": false,
+      "alarm": { "sound": "upload:ec8rk:Prayer Low", "repeat": false },
+      "voice": null,
+      "tooltip": null,
+      "exportbar": true,
+      "stat": "pray",
+      "higherlower": "lower",
+      "treshold": 50,
+      "type": "actionbar"
+    },
+    {
+      "name": "Summoning Alert",
+      "globalalarm": false,
+      "alarm": { "sound": "upload:edba2:Light Spark", "repeat": false },
+      "voice": null,
+      "tooltip": null,
+      "exportbar": true,
+      "stat": "sum",
+      "higherlower": "lower",
+      "treshold": 20,
+      "type": "actionbar"
+    },
+    {
+      "name": "Familiar Timer",
+      "globalalarm": false,
+      "alarm": { "sound": "upload:ec92m:Familiar", "repeat": false },
+      "voice": null,
+      "tooltip": null,
+      "exportbar": true,
+      "resetonactive": false,
+      "lines": [
+        {
+          "text": "You have 1 minute before your famiiiar vanishes",
+          "percent": 100
+        },
+        {
+          "text": "You have 30 seconds before your famiiiar vanishes",
+          "percent": 0
+        }
+      ],
+      "colors": [
+        [255, 255, 255],
+        [127, 169, 255],
+        [235, 47, 47]
+      ],
+      "type": "chat"
+    },
+    {
+      "name": "Incense Sticks",
+      "globalalarm": false,
+      "alarm": { "sound": "upload:ec8s8:Incense Sticks", "repeat": false },
+      "voice": null,
+      "tooltip": null,
+      "exportbar": false,
+      "resetonactive": false,
+      "lines": [
+        { "text": "The effects have ended for", "percent": 100 },
+        { "text": "Your auto-screener spits out ", "percent": 0 }
+      ],
+      "colors": [
+        [255, 255, 255],
+        [127, 169, 255],
+        [255, 0, 0]
+      ],
+      "type": "chat"
+    },
+    {
+      "name": "",
+      "globalalarm": true,
+      "alarm": null,
+      "voice": null,
+      "tooltip": null,
+      "exportbar": true,
+      "resetonactive": false,
+      "lines": [],
+      "colors": [],
+      "type": "chat"
+    },
+    {
+      "name": "Crater Overllows",
+      "globalalarm": false,
+      "alarm": { "sound": "upload:edps5:Arcane Magic", "repeat": false },
+      "voice": null,
+      "tooltip": null,
+      "exportbar": true,
+      "resetonactive": true,
+      "lines": [
+        {
+          "text": "The crater overflows with energy and you feel an affinity towards the",
+          "percent": 100
+        }
+      ],
+      "colors": [
+        [255, 255, 255],
+        [0, 255, 0]
+      ],
+      "type": "chat"
+    },
+    {
+      "name": "Divine Charge Filled",
+      "globalalarm": false,
+      "alarm": { "sound": "upload:eddbr:Coin Burst", "repeat": false },
+      "voice": null,
+      "tooltip": null,
+      "exportbar": true,
+      "resetonactive": false,
+      "lines": [
+        {
+          "text": "Your Divine-o-matic vacuum has successfuliy collected enough divine",
+          "percent": 100
+        },
+        { "text": "A divine charge container is 25% full", "percent": 0 }
+      ],
+      "colors": [
+        [255, 255, 255],
+        [0, 255, 0],
+        [255, 140, 56]
+      ],
+      "type": "chat"
+    },
+    {
+      "name": "Divine-O-Matic Empty",
+      "globalalarm": false,
+      "alarm": { "sound": "upload:edd7n:Mech Shutdown", "repeat": false },
+      "voice": null,
+      "tooltip": null,
+      "exportbar": true,
+      "resetonactive": false,
+      "lines": [
+        {
+          "text": "Your Divine-o-matic vacuum has run out of empty containers",
+          "percent": 100
+        },
+        { "text": "empty divine charge container", "percent": 0 }
+      ],
+      "colors": [
+        [255, 255, 255],
+        [255, 0, 0]
+      ],
+      "type": "chat"
+    },
+    {
+      "name": "Divine-O-Matic Full",
+      "globalalarm": false,
+      "alarm": { "sound": "upload:edbbx:Mech Switch", "repeat": false },
+      "voice": null,
+      "tooltip": null,
+      "exportbar": true,
+      "resetonactive": false,
+      "lines": [
+        {
+          "text": "Your Divine-o-matic vacuum cannot hold any",
+          "percent": 100
+        },
+        {
+          "text": "Your divine charges are placed in your inventory",
+          "percent": 0
+        }
+      ],
+      "colors": [[255, 255, 255]],
+      "type": "chat"
+    },
+    {
+      "name": "",
+      "globalalarm": false,
+      "alarm": null,
+      "voice": null,
+      "tooltip": null,
+      "exportbar": false,
+      "resetonactive": false,
+      "lines": [],
+      "colors": [
+        [255, 255, 255],
+        [255, 255, 0]
+      ],
+      "type": "chat"
+    },
+    {
+      "name": "Weaving",
+      "globalalarm": false,
+      "alarm": { "sound": "upload:ededu:Armor Craft", "repeat": false },
+      "voice": null,
+      "tooltip": null,
+      "exportbar": true,
+      "triggerpercent": 100,
+      "type": "craftmenu"
+    },
+    {
+      "name": "XP counter inactivity",
+      "globalalarm": false,
+      "alarm": { "sound": "upload:edpss:Chime Ping", "repeat": false },
+      "voice": null,
+      "tooltip": null,
+      "exportbar": true,
+      "delay": 10,
+      "treshold": 0,
+      "skill": "tot",
+      "type": "xpcounter"
+    },
+    {
+      "name": "Burny The Bot",
+      "globalalarm": false,
+      "alarm": { "sound": "upload:edpxn:What", "repeat": false },
+      "voice": null,
+      "tooltip": null,
+      "exportbar": true,
+      "resetonactive": true,
+      "lines": [{ "text": "What", "percent": 100 }],
+      "colors": [
+        [255, 255, 255],
+        [216, 67, 43],
+        [127, 169, 255]
+      ],
+      "type": "chat"
+    }
+  ]
+}
