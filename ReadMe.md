@@ -30,31 +30,17 @@ o    Voice Dialog when you’re completely out of prayer
 -    Familiar HP- Demon voice dialog to ask for healing @ 30% 
 -    Incense Sticks- with a voice Dialog for when your incense sticks effects expire
 
-OVERLOADS
+OVERLOADS & Potions
 -    Elder Overload Salves – Pause if not using with a voice dialog to sip your overload at 15sec
 -    Elder overloads and all other overloads with a voice dialog to sip your overload at 15sec
 -    Antifires- with a voice dialog that your protection from fire is expiring
 -    Antipoison- with a voice dialog when your immune to poison is expiring 
--    Prayer Renewal with voice dialog when your Renewal is expiring @ 30 sec 
+-    Prayer Renewal with voice dialog when your Renewal is expiring @ 30 sec
+-    
 PERKS, Loot, & CD’s
 -    Relentless- Perk Alert with a voice dialog when your relentless perk procs
 -    Loot Beam- SFX when you get a loot beam of any kind
 -    Living Death- Ghostly sound when living death is over
+-    
 Most alerts will auto reset themselves or reset upon praying at an alter or charging at a adrenaline crystal. You do not have to reset alerts yourself!!
 
-Patch 1.03 
-Introducing Callum AI Voice Actor !!!
-•    Trying to drink a adrenaline potion or powerburst potion will trigger a faster "I can't Drink that right now" will still reset if you click RS Window may interrupt the word “NOW” if spam clicking RS
-•    Accommodation for multiple font styles, size 10pt still has issues use 12pt+ 
-•    Familiars will trigger alert at 1 min and say it will abandon you and auto reset at 30 sec.
-•    100% adrenaline will have a subtle Shadow Fizzle Sound
-•    Relentless will trigger a Voice Dialog saying, “I’m Relentless” Sound, May get skipped if your chat is small
-•    Bone Shield will no longer trigger other alarms…EVER.
-•    Opening bank won't trigger EVERY ALERT besides Action Bar (HP, Prayer, Summoning) Don’t hide your action bar with bank.
-•    If the action bar is covered with a tooltip covers HP Prayer Prayer or Summing Alarms will trigger. Make sure your action bar is locked and Bank does not cover Action Bar
-•    Incense Sticks will no longer repeat and reset when you recharge at war alter or adrenaline crystal.
-•    Removed Aura Expired Buff option- Not reliable not working as intended.
-•    Removed Familiar Expired Buff Option- Not reliable not working as intended.
-•    Removed Powders- Simply no points.
-•    Added more alerts to Health and Prayer to remind you you’re dying and or Running low on Prayer.
-•    Allowed for complete customization of Prayer and Health Alerts you can pause/delete any alerts you do not wish to have.
