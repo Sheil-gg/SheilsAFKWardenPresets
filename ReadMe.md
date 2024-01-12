@@ -7,7 +7,9 @@ Paste it seamlessly into your Alt+1 AFK Warden interface.
 Revel in the enhanced experience.
 Encountered an alert that feels redundant? No worries. Simply pause the timer or remove it altogether to align the tool precisely to your preferences.
 
-**Sheil’s Combat Warden 1.03** 
+Feedback & Support: https://discord.gg/bBd7CWM5
+
+**Sheil’s Combat Warden 1.04** 
 Fully Voice Acted and HD SFX
 
 Features
