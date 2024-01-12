@@ -43,5 +43,7 @@ PERKS, Loot, & CD’s
 -    Living Death- Ghostly sound when living death is over
 -    
 Most alerts will auto reset themselves or reset upon praying at an alter or charging at a adrenaline crystal. You do not have to reset alerts yourself!!
+
+
 ![Combat Preset](https://github.com/Sheil-gg/SheilsAFKWardenPresets/assets/155850453/49b8b4a5-217f-4888-a2d0-1203facfda49)
 
