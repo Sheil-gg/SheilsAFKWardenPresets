@@ -45,5 +45,6 @@ PERKS, Loot, & CD’s
 Most alerts will auto reset themselves or reset upon praying at an alter or charging at a adrenaline crystal. You do not have to reset alerts yourself!!
 
 
-![Combat Preset](https://github.com/Sheil-gg/SheilsAFKWardenPresets/assets/155850453/49b8b4a5-217f-4888-a2d0-1203facfda49)
+![Combat Preset](https://github.com/Sheil-gg/SheilsAFKWardenPresets/assets/155850453/c6128fa3-5e6e-49a9-bd20-5b319050780b)
+
 
