@@ -48,3 +48,55 @@ Most alerts will auto reset themselves or reset upon praying at an alter or char
 ![Combat Preset](https://github.com/Sheil-gg/SheilsAFKWardenPresets/assets/155850453/c6128fa3-5e6e-49a9-bd20-5b319050780b)
 
 
+Patch v1.01
+• lobby timer is set to 14.5 min and will play a fade in runescape theme and crocendo before you logout
+• Trying to drink a adrenaline potion or powerburst potion will trigger "I can't use that right now" will reset if you click RS Window may interrupt dialog if spam clicking RS
+• Familiars will trigger alert at 1 min and say it will abandon you and auto reset at 30 sec.
+• 100% adrenaline will have a subtle Shadow Fizzle Sound
+• Relentless will trigger a Subtle Mech_Switch Sound
+• Darkness will not repeat and reset when you recharge at war alter or adrenaline crystal, however only trigger when it expires at 0 sec
+• Bone Shield will no longer trigger other alarms
+• Opening bank won't trigger EVERY ALERT
+• Incense Sticks will no longer repeat and reset when you recharge at war alter or adrenaline crystal
+• Auras Expiration will make a Light Spark sound when Aura is depleted (Can be paused- May Repeat)
+• Familiar Expiration will make a Sweeping Strike sound when Familiar expires (Can be paused- May Repeat)
+• Added a sound when you scatter powders (personal request)
+
+Patch  v1.02
+*Dialog & Voice Overs*
+•	Even more tweaks to Audio
+•	Removed Powders for they cluttered the list
+•	Removed Familiar Expired because buff Icon is not reliable
+•	Removed Aura Expired because buff Icon is not Reliable
+•	Normal Overload will reset General Overload Alert
+•	Loot Beam fixed to detect Correct Orange Text
+•	Familiar HP Alert Fixed
+
+Patch v1.03
+Introducing Callum Voice Actor !!!
+•	Trying to drink a adrenaline potion or powerburst potion will trigger a faster "I can't Drink that right now" will still reset if you click RS Window may interrupt the word “NOW” if spam clicking RS
+•	Accommodation for multiple font styles, size 10pt still has issues use 12pt+ 
+•	Familiars will trigger alert at 1 min and say it will abandon you and auto reset at 30 sec.
+•	100% adrenaline will have a subtle Shadow Fizzle Sound
+•	Relentless will trigger a Voice Dialog saying, “I’m Relentless” Sound, May get skipped if your chat is small
+•	Bone Shield will no longer trigger other alarms…EVER.
+•	Opening bank won't trigger EVERY ALERT besides Action Bar (HP, Prayer, Summoning) Don’t hide your action bar with bank.
+•	If the action bar is covered with a tooltip covers HP Prayer Prayer or Summing Alarms will trigger. Make sure your action bar is locked and Bank does not cover Action Bar
+•	Incense Sticks will no longer repeat and reset when you recharge at war alter or adrenaline crystal.
+•	Removed Aura Expired Buff option- Not reliable not working as intended.
+•	Removed Familiar Expired Buff Option- Not reliable not working as intended.
+•	Removed Powders- Simply no points.
+•	Added more alerts to Health and Prayer to remind you you’re dying and or Running low on Prayer.
+•	Allowed for complete customization of Prayer and Health Alerts you can pause/delete any alerts you do not wish to have.
+
+Patch v1.04
+•	Fixed an issue with Antifires not resetting 
+•	Altered the Audio so the Overload Voice Over will prompt at 5 sec left (Trigger will still happen at 15sec)
+•	Fixed an issue with Prayer Renewal not Triggering
+•	Fixed an issue with Super Prayer Renewal not Triggering
+•	Fixed an issue with Holy Overload & Aggro Overload Not reseting 
+•	Added Ultimate Cast SFX
+•	Added Runes Alert when you do not have sufficient runes to cast spells
+•	Added Ectoplasm Alert when you’re out of ectoplasm
+•	Added Divine Charge Pack Alert when you’re less then 60 & 30 min of Divine Charge
+
