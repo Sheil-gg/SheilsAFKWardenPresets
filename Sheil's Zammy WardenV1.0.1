@@ -1,0 +1,1737 @@
+{
+    "name": "Zammy Warden 1.0.1",
+    "baseName": "slayer",
+    "alerters": [
+        {
+            "name": "Lobby timer",
+            "globalalarm": true,
+            "alarm": {
+                "sound": "upload:emxar:RuneScape 3 Main Theme",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "delay": 830,
+            "type": "inactive"
+        },
+        {
+            "name": "Life Points 30%",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9b:Callum_Health Low",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "stat": "hp",
+            "higherlower": "lower",
+            "treshold": 30,
+            "type": "actionbar"
+        },
+        {
+            "name": "Prayer Points 30%",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9k:Callum_Prayer Low",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "stat": "pray",
+            "higherlower": "lower",
+            "treshold": 30,
+            "type": "actionbar"
+        },
+        {
+            "name": "Adrenaline 100%",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxaz:Fizle_Shadow_low",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "stat": "dren",
+            "higherlower": "higher",
+            "treshold": 100,
+            "type": "actionbar"
+        },
+        {
+            "name": "Summoning Points 20%",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9s:Callum_Summoning Points",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "stat": "sum",
+            "higherlower": "lower",
+            "treshold": 10,
+            "type": "actionbar"
+        },
+        {
+            "name": "Darkness",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw86:Callum_Darkness",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "The darkness fades",
+                    "percent": 100
+                },
+                {
+                    "text": "You recharge your Prayer points",
+                    "percent": 0
+                },
+                {
+                    "text": "You start to channel adrenaline from the crystal",
+                    "percent": 0
+                },
+                {
+                    "text": "You deal a critical strike against your opponent",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Animate Dead",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw8x:Callum_Animate Dead",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Your control of the dead is wavering.",
+                    "percent": 100
+                },
+                {
+                    "text": "Your control of the dead fades, the spirits return to rest.",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Potion Unavailable",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw85:Callum_Cant Drink",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "You can't drink ",
+                    "percent": 100
+                },
+                {
+                    "text": "You don't have any left",
+                    "percent": 100
+                },
+                {
+                    "text": "You already have full adrenaline",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "God book",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9a:Callum_God Book",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Your god book is no longer active",
+                    "percent": 100
+                },
+                {
+                    "text": "Your god book is now active",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    204,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Auras",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw83:Callum_Aura",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Your aura will deplete in 1 minute",
+                    "percent": 100
+                },
+                {
+                    "text": "Your aura has depleted",
+                    "percent": 0
+                },
+                {
+                    "text": "You unleash a berserk rage",
+                    "percent": 0
+                },
+                {
+                    "text": "Your berserker rage has subsided",
+                    "percent": 0
+                },
+                {
+                    "text": "You recharge your Prayer points",
+                    "percent": 0
+                },
+                {
+                    "text": "The current event has reset the cooldown of your aura",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    255,
+                    204,
+                    0
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    111,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Weapon Poison",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9t:Callum_Weapon Poison",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Your poison potion is about to expire",
+                    "percent": 100
+                },
+                {
+                    "text": "Your poison potion has expired",
+                    "percent": 100
+                },
+                {
+                    "text": "You apply some of your Weapon Poison",
+                    "percent": 0
+                },
+                {
+                    "text": "You appiy some of your Weapon Poison+++ to your weapon",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Cannon decay",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw84:Callum_Cannon Decay",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "Your cannon has almost decayed",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Familiar ",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw89:Callum_Familiar",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "You have 1 minute before your famiiiar vanishes",
+                    "percent": 100
+                },
+                {
+                    "text": "You have 30 seconds before your famiiiar vanishes",
+                    "percent": 0
+                },
+                {
+                    "text": "You have 30 seconds before your familiar vanishes",
+                    "percent": 0
+                },
+                {
+                    "text": "You have 1 minute before your familiar vanishes",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    235,
+                    47,
+                    47
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Familiar HP",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:edrxx:Familiar Heal",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "hppercent": 30,
+            "type": "summoning"
+        },
+        {
+            "name": "Incense Sticks",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9d:Callum_Incense Sticks",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "The effects have ended for:",
+                    "percent": 100
+                },
+                {
+                    "text": "You start to channel adrenaline from the crystal",
+                    "percent": 0
+                },
+                {
+                    "text": "You recharge your Prayer points",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Elder Overload Salve - Pause if not using",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9f:Callum_Overload2",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "The effects of overload are about to wear off",
+                    "percent": 100
+                },
+                {
+                    "text": "Your resistance to dragonfire is about to run out",
+                    "percent": 100
+                },
+                {
+                    "text": "Your immunity to poison is about to expire",
+                    "percent": 100
+                },
+                {
+                    "text": "Elder overload salve",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "",
+            "globalalarm": false,
+            "alarm": null,
+            "voice": null,
+            "tooltip": null,
+            "exportbar": false,
+            "resetonactive": false,
+            "lines": [],
+            "colors": [],
+            "type": "chat"
+        },
+        {
+            "name": "Pause the 4 below alerts if using Elder Overload Salve",
+            "globalalarm": false,
+            "alarm": null,
+            "voice": null,
+            "tooltip": null,
+            "exportbar": false,
+            "resetonactive": false,
+            "lines": [],
+            "colors": [],
+            "type": "chat"
+        },
+        {
+            "name": "Overload",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9f:Callum_Overload2",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "The effects of overload are about to wear off",
+                    "percent": 100
+                },
+                {
+                    "text": "Overload potion",
+                    "percent": 0
+                },
+                {
+                    "text": "Aggroverload",
+                    "percent": 0
+                },
+                {
+                    "text": "Holy aggroverload",
+                    "percent": 0
+                },
+                {
+                    "text": "Holy overload",
+                    "percent": 0
+                },
+                {
+                    "text": "Overload salve",
+                    "percent": 0
+                },
+                {
+                    "text": "Perfect plus",
+                    "percent": 0
+                },
+                {
+                    "text": "Searing overload",
+                    "percent": 0
+                },
+                {
+                    "text": "Supreme overload",
+                    "percent": 0
+                },
+                {
+                    "text": "Elder overload ",
+                    "percent": 0
+                },
+                {
+                    "text": "The effects of your Aggression potion will expire",
+                    "percent": 100
+                },
+                {
+                    "text": "Holy overioad",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Antifire",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw8z:Callum_Antifire",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Your resistance to dragonfire is about to run out",
+                    "percent": 100
+                },
+                {
+                    "text": "Your resistance to dragonfire has run out",
+                    "percent": 100
+                },
+                {
+                    "text": "Antifire potion",
+                    "percent": 0
+                },
+                {
+                    "text": "Wyrmfire potion",
+                    "percent": 0
+                },
+                {
+                    "text": "Supreme overload salve",
+                    "percent": 0
+                },
+                {
+                    "text": "Overload salve",
+                    "percent": 0
+                },
+                {
+                    "text": "Elder overload salve",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Antipoison",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:ed4g4:Callum_AntiPoison",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Your immunity to poison is about to expire",
+                    "percent": 100
+                },
+                {
+                    "text": "Your immunity to poison has expired",
+                    "percent": 100
+                },
+                {
+                    "text": "You drink some of your Antipoison",
+                    "percent": 0
+                },
+                {
+                    "text": "Elder overload salve",
+                    "percent": 0
+                },
+                {
+                    "text": "Overload salve",
+                    "percent": 0
+                },
+                {
+                    "text": "Supreme overload salve",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Prayer Renewal",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9m:Callum_Prayer Renewal",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "You drink some of your Super prayer renewal potion",
+                    "percent": 0
+                },
+                {
+                    "text": "You drink some of your Prayer renewal potion",
+                    "percent": 0
+                },
+                {
+                    "text": "Your prayer renewal will run out in 30 seconds",
+                    "percent": 100
+                },
+                {
+                    "text": "Your .",
+                    "percent": 100
+                },
+                {
+                    "text": "You drink some of your Super prayer renewal potion",
+                    "percent": 0
+                },
+                {
+                    "text": "You drink some of your Holy overload potion",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    0,
+                    101,
+                    252
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Relentless Perk",
+            "globalalarm": true,
+            "alarm": {
+                "sound": "upload:emw9c:Callum_ImRelentless",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "Your Reientiess perk prevents your adrenaiine from being drained witn tnis",
+                    "percent": 100
+                },
+                {
+                    "text": "Your Relentless perk prevents your adrenaline from being drained with this ability",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    60,
+                    183,
+                    30
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Loot beam",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxa2:Healing_Stream",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "golden beam shines over",
+                    "percent": 100
+                },
+                {
+                    "text": "rainbow shines over",
+                    "percent": 100
+                },
+                {
+                    "text": "festive beam shines over",
+                    "percent": 100
+                },
+                {
+                    "text": "sandcastle scene shines over",
+                    "percent": 100
+                },
+                {
+                    "text": "water spout sprays over",
+                    "percent": 100
+                },
+                {
+                    "text": "Hearts twirl over",
+                    "percent": 100
+                },
+                {
+                    "text": "You deal a critical strike against your opponent",
+                    "percent": 0
+                },
+                {
+                    "text": "You recharge your Prayer points",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    245,
+                    151,
+                    0
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Living Death Ends ",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxas:Deathstrike",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Your undead instinct fades",
+                    "percent": 100
+                },
+                {
+                    "text": "You deal a critical strike against your opponent",
+                    "percent": 0
+                },
+                {
+                    "text": "You recharge your Prayer points",
+                    "percent": 0
+                },
+                {
+                    "text": "You start to channel adrenaline from the crystal",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Prayer Points 0",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9h:Callum_Prayer Empty",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": false,
+            "stat": "pray",
+            "higherlower": "lower",
+            "treshold": 0,
+            "type": "actionbar"
+        },
+        {
+            "name": "Prayer Points 15%",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9q:Callum_Sip Prayer",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": false,
+            "stat": "pray",
+            "higherlower": "lower",
+            "treshold": 20,
+            "type": "actionbar"
+        },
+        {
+            "name": "Life Points 10%",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxa3:Heartbeat",
+                "repeat": true
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "stat": "hp",
+            "higherlower": "lower",
+            "treshold": 10,
+            "type": "actionbar"
+        },
+        {
+            "name": "Life Points 20%",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9p:Callum_Scream",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "stat": "hp",
+            "higherlower": "lower",
+            "treshold": 20,
+            "type": "actionbar"
+        },
+        {
+            "name": "Ultimate Cast",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxa7:Mantid_Spike",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "You are refunded 10% adrenaline from the relic power within",
+                    "percent": 100
+                },
+                {
+                    "text": "You deal a critical strike against your opponent",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Runes",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9n:Callum_Runes",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "This incantation requires additional payment",
+                    "percent": 100
+                },
+                {
+                    "text": "You fill your nexus from your inventory",
+                    "percent": 0
+                },
+                {
+                    "text": "rune to your nexus",
+                    "percent": 0
+                },
+                {
+                    "text": "runes to cast this spell",
+                    "percent": 100
+                },
+                {
+                    "text": "You store the following runes in your pouch",
+                    "percent": 0
+                },
+                {
+                    "text": "You recharge your Prayer points",
+                    "percent": 0
+                },
+                {
+                    "text": "You start to channel adrenaline from the crystal",
+                    "percent": 0
+                },
+                {
+                    "text": "You deal a critical strike against your opponent",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Ectoplasm ",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw88:Callum_Ectoplasm",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "This ability requires additional payment",
+                    "percent": 100
+                },
+                {
+                    "text": "Ectoplasm to your nexus",
+                    "percent": 0
+                },
+                {
+                    "text": "You fill your nexus from your inventory",
+                    "percent": 0
+                },
+                {
+                    "text": "You recharge your Prayer points",
+                    "percent": 0
+                },
+                {
+                    "text": "You start to channel adrenaline from the crystal",
+                    "percent": 0
+                },
+                {
+                    "text": "You deal a critical strike against your opponent",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Divine Charge",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw87:Callum_Divine Charge",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "You have fewer than 60 minutes of charge remaining in your charge pack",
+                    "percent": 100
+                },
+                {
+                    "text": "You have fewer than 30 minutes of charge remaining in your charge pack",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Progress Tracker",
+            "globalalarm": false,
+            "alarm": null,
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "That's your plan? The Edicts? HA!",
+                    "percent": 16
+                },
+                {
+                    "text": "You actually think this will work,",
+                    "percent": 32
+                },
+                {
+                    "text": "This is no longer amusing. Mortals",
+                    "percent": 48
+                },
+                {
+                    "text": "This has gone on long enough",
+                    "percent": 64
+                },
+                {
+                    "text": "You dare defy me?",
+                    "percent": 80
+                },
+                {
+                    "text": "NO GIELINOR WILL BURN! CHAOS WILL REIGN!",
+                    "percent": 100
+                },
+                {
+                    "text": "So eager to meet your end.",
+                    "percent": 0
+                },
+                {
+                    "text": "Die. And be forgotten.",
+                    "percent": 0
+                },
+                {
+                    "text": "Your preset is being withdrawn.",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    232,
+                    4,
+                    4
+                ],
+                [
+                    153,
+                    255,
+                    153
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Channeler - HEED MY CALL!",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw8n:John_Witch",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "HEED MY CALL!",
+                    "percent": 100
+                },
+                {
+                    "text": "That's your plan?",
+                    "percent": 0
+                },
+                {
+                    "text": "You actually think that this will work,",
+                    "percent": 0
+                },
+                {
+                    "text": "This is no longer amusing.",
+                    "percent": 0
+                },
+                {
+                    "text": "This has gone on long enough.",
+                    "percent": 0
+                },
+                {
+                    "text": "You dare defy me?",
+                    "percent": 0
+                },
+                {
+                    "text": "As you restore the Edict, Zamorak draws the remaining power",
+                    "percent": 0
+                },
+                {
+                    "text": "Your preset is being withdrawn.",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    232,
+                    4,
+                    4
+                ],
+                [
+                    153,
+                    255,
+                    153
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "SLAM - This world will burn",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw8p:John_Flames of Zammorak",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "This world will burn",
+                    "percent": 100
+                },
+                {
+                    "text": "HEED MY CALL!",
+                    "percent": 0
+                },
+                {
+                    "text": "CHAOS, UNFETTERED!",
+                    "percent": 0
+                },
+                {
+                    "text": "Step into the dark...",
+                    "percent": 0
+                },
+                {
+                    "text": "I will tear you asunder!",
+                    "percent": 0
+                },
+                {
+                    "text": "FEEL THE RAGE OF A GOD!",
+                    "percent": 0
+                },
+                {
+                    "text": "You're already dead.",
+                    "percent": 0
+                },
+                {
+                    "text": "Your preset is being withdrawn.",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    232,
+                    4,
+                    4
+                ],
+                [
+                    153,
+                    255,
+                    153
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "INFERNUS - Step into the dark...Meet your death.",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw8q:John_Infernal Tomb",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Step into the dark...",
+                    "percent": 100
+                },
+                {
+                    "text": "You enter, unharmed.",
+                    "percent": 0
+                },
+                {
+                    "text": "Your preset is being withdrawn.",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    232,
+                    4,
+                    4
+                ],
+                [
+                    153,
+                    255,
+                    153
+                ],
+                [
+                    0,
+                    255,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "RUNE - You're already dead.",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw8r:John_ Rune of Destruction",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "You're already dead.",
+                    "percent": 100
+                },
+                {
+                    "text": "HEED MY CALL!",
+                    "percent": 0
+                },
+                {
+                    "text": "CHAOS, UNFETTERED!",
+                    "percent": 0
+                },
+                {
+                    "text": "This world will burn",
+                    "percent": 0
+                },
+                {
+                    "text": "Step into the dark...",
+                    "percent": 0
+                },
+                {
+                    "text": "I will tear you asunder!",
+                    "percent": 0
+                },
+                {
+                    "text": "FEEL THE RAGE OF A GOD!",
+                    "percent": 0
+                },
+                {
+                    "text": "Your preset is being withdrawn.",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    232,
+                    4,
+                    4
+                ],
+                [
+                    153,
+                    255,
+                    153
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "CAGE - CHAOS, UNFETTERED!",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw8s:John_Adrenaline Cage",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "CHAOS, UNFETTERED!",
+                    "percent": 100
+                },
+                {
+                    "text": "HEED MY CALL!",
+                    "percent": 0
+                },
+                {
+                    "text": "This world will burn",
+                    "percent": 0
+                },
+                {
+                    "text": "You're already dead.",
+                    "percent": 0
+                },
+                {
+                    "text": "I will tear you asunder!",
+                    "percent": 0
+                },
+                {
+                    "text": "FEEL THE RAGE OF A GOD!",
+                    "percent": 0
+                },
+                {
+                    "text": "Step into the dark...",
+                    "percent": 0
+                },
+                {
+                    "text": "Your preset is being withdrawn.",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    232,
+                    4,
+                    4
+                ],
+                [
+                    153,
+                    255,
+                    153
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "CURL UP1 - I will tear you asunder!",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw8u:John_Decimate & Chaos Blast",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "I will tear you asunder!",
+                    "percent": 100
+                },
+                {
+                    "text": "1/1.",
+                    "percent": 0
+                },
+                {
+                    "text": "FEEL THE RAGE OF A GOD",
+                    "percent": 0
+                },
+                {
+                    "text": "Your preset is being withdrawn.",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    232,
+                    4,
+                    4
+                ],
+                [
+                    153,
+                    255,
+                    153
+                ],
+                [
+                    0,
+                    255,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "CURL UP2 - FEEL THE RAGE OF A GOD",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw8t:John_Defend Yourself",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "FEEL THE RAGE OF A GOD",
+                    "percent": 100
+                },
+                {
+                    "text": "You drink some of your Powerburst of vitality.",
+                    "percent": 0
+                },
+                {
+                    "text": "You can't drink a powerburst potion",
+                    "percent": 0
+                },
+                {
+                    "text": "HEED MY CALL!",
+                    "percent": 0
+                },
+                {
+                    "text": "CHAOS, UNFETTERED!",
+                    "percent": 0
+                },
+                {
+                    "text": "This world will burn",
+                    "percent": 0
+                },
+                {
+                    "text": "Step into the dark...",
+                    "percent": 0
+                },
+                {
+                    "text": "You're already dead.",
+                    "percent": 0
+                },
+                {
+                    "text": "Your preset is being withdrawn.",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    232,
+                    4,
+                    4
+                ],
+                [
+                    153,
+                    255,
+                    153
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Witch still in Infernus",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw8v:John_Witch Alive",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": "Witch still in Infernus",
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Zamorak's connection to the runes is too strong.",
+                    "percent": 100
+                },
+                {
+                    "text": "As you restore the Edict, Zamorak draws the remaining power",
+                    "percent": 0
+                },
+                {
+                    "text": "That's your plan?",
+                    "percent": 0
+                },
+                {
+                    "text": "You actually think this will work,",
+                    "percent": 0
+                },
+                {
+                    "text": "This is no longer amusing.",
+                    "percent": 0
+                },
+                {
+                    "text": "This has gone on long enough.",
+                    "percent": 0
+                },
+                {
+                    "text": "You dare defy me?",
+                    "percent": 0
+                },
+                {
+                    "text": "Your preset is being withdrawn.",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    235,
+                    47,
+                    47
+                ],
+                [
+                    153,
+                    255,
+                    153
+                ]
+            ],
+            "type": "chat"
+        }
+    ]
+}
