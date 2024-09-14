@@ -1,0 +1,1137 @@
+{
+    "name": "Combat Warden Female 1.0.4",
+    "baseName": "slayer",
+    "alerters": [
+        {
+            "name": "Lobby timer",
+            "globalalarm": true,
+            "alarm": {
+                "sound": "upload:emxar:RuneScape 3 Main Theme",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "delay": 830,
+            "type": "inactive"
+        },
+        {
+            "name": "Life Points 30%",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw98:Lily_Health Low",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "stat": "hp",
+            "higherlower": "lower",
+            "treshold": 30,
+            "type": "actionbar"
+        },
+        {
+            "name": "Prayer Points 30%",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxaf:Lily_Prayer Low",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "stat": "pray",
+            "higherlower": "lower",
+            "treshold": 30,
+            "type": "actionbar"
+        },
+        {
+            "name": "Adrenaline 100%",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxaz:Fizle_Shadow_low",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "stat": "dren",
+            "higherlower": "higher",
+            "treshold": 100,
+            "type": "actionbar"
+        },
+        {
+            "name": "Summoning Points 20%",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:ed4f4:Callum_Summoning Points",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "stat": "sum",
+            "higherlower": "lower",
+            "treshold": 10,
+            "type": "actionbar"
+        },
+        {
+            "name": "Darkness",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw93:Lily_Darkness",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "The darkness fades",
+                    "percent": 100
+                },
+                {
+                    "text": "You recharge your Prayer points",
+                    "percent": 0
+                },
+                {
+                    "text": "You start to channel adrenaline from the crystal",
+                    "percent": 0
+                },
+                {
+                    "text": "You deal a critical strike against your opponent",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Animate Dead",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9u:Lily_Anitmate Dead",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Your control of the dead is wavering.",
+                    "percent": 100
+                },
+                {
+                    "text": "Your control of the dead fades, the spirits return to rest.",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Potion Unavailable",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw92:Lily_Cant Drink",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "You can't drink ",
+                    "percent": 100
+                },
+                {
+                    "text": "You don't have any left",
+                    "percent": 100
+                },
+                {
+                    "text": "You already have full adrenaline",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "God book",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw97:Lily_God Book",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Your god book is no longer active",
+                    "percent": 100
+                },
+                {
+                    "text": "Your god book is now active",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    204,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Auras",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9x:Lily_Aura",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Your aura will deplete in 1 minute",
+                    "percent": 100
+                },
+                {
+                    "text": "Your aura has depleted",
+                    "percent": 0
+                },
+                {
+                    "text": "You unleash a berserk rage",
+                    "percent": 0
+                },
+                {
+                    "text": "Your berserker rage has subsided",
+                    "percent": 0
+                },
+                {
+                    "text": "You recharge your Prayer points",
+                    "percent": 0
+                },
+                {
+                    "text": "The current event has reset the cooldown of your aura",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    255,
+                    204,
+                    0
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    111,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Weapon Poison",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxaq:Lily_Weapon Poison",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Your poison potion is about to expire",
+                    "percent": 100
+                },
+                {
+                    "text": "Your poison potion has expired",
+                    "percent": 100
+                },
+                {
+                    "text": "You apply some of your Weapon Poison",
+                    "percent": 0
+                },
+                {
+                    "text": "You appiy some of your Weapon Poison+++ to your weapon",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Cannon decay",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9z:Lily_Cannon Decay",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "Your cannon has almost decayed",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Familiar ",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw96:Lily_Familiar",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "You have 1 minute before your famiiiar vanishes",
+                    "percent": 100
+                },
+                {
+                    "text": "You have 30 seconds before your famiiiar vanishes",
+                    "percent": 0
+                },
+                {
+                    "text": "You have 30 seconds before your familiar vanishes",
+                    "percent": 0
+                },
+                {
+                    "text": "You have 1 minute before your familiar vanishes",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    235,
+                    47,
+                    47
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Familiar HP",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:edrxx:Familiar Heal",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "hppercent": 30,
+            "type": "summoning"
+        },
+        {
+            "name": "Incense Sticks",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxaa:Lily_Incense Sticks",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "The effects have ended for:",
+                    "percent": 100
+                },
+                {
+                    "text": "You start to channel adrenaline from the crystal",
+                    "percent": 0
+                },
+                {
+                    "text": "You recharge your Prayer points",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Elder Overload Salve - Pause if not using",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxac:Lily_Overload2",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "The effects of overload are about to wear off",
+                    "percent": 100
+                },
+                {
+                    "text": "Your resistance to dragonfire is about to run out",
+                    "percent": 100
+                },
+                {
+                    "text": "Your immunity to poison is about to expire",
+                    "percent": 100
+                },
+                {
+                    "text": "Elder overload salve",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "",
+            "globalalarm": false,
+            "alarm": null,
+            "voice": null,
+            "tooltip": null,
+            "exportbar": false,
+            "resetonactive": false,
+            "lines": [],
+            "colors": [],
+            "type": "chat"
+        },
+        {
+            "name": "Pause the 4 below alerts if using Elder Overload Salve",
+            "globalalarm": false,
+            "alarm": null,
+            "voice": null,
+            "tooltip": null,
+            "exportbar": false,
+            "resetonactive": false,
+            "lines": [],
+            "colors": [],
+            "type": "chat"
+        },
+        {
+            "name": "Overload",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxac:Lily_Overload2",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "The effects of overload are about to wear off",
+                    "percent": 100
+                },
+                {
+                    "text": "Overload potion",
+                    "percent": 0
+                },
+                {
+                    "text": "Aggroverload",
+                    "percent": 0
+                },
+                {
+                    "text": "Holy aggroverload",
+                    "percent": 0
+                },
+                {
+                    "text": "Holy overload",
+                    "percent": 0
+                },
+                {
+                    "text": "Overload salve",
+                    "percent": 0
+                },
+                {
+                    "text": "Perfect plus",
+                    "percent": 0
+                },
+                {
+                    "text": "Searing overload",
+                    "percent": 0
+                },
+                {
+                    "text": "Supreme overload",
+                    "percent": 0
+                },
+                {
+                    "text": "Elder overload ",
+                    "percent": 0
+                },
+                {
+                    "text": "The effects of your Aggression potion will expire",
+                    "percent": 100
+                },
+                {
+                    "text": "Holy overioad",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Antifire",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9v:Lily_Antifires",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Your resistance to dragonfire is about to run out",
+                    "percent": 100
+                },
+                {
+                    "text": "Your resistance to dragonfire has run out",
+                    "percent": 100
+                },
+                {
+                    "text": "Antifire potion",
+                    "percent": 0
+                },
+                {
+                    "text": "Wyrmfire potion",
+                    "percent": 0
+                },
+                {
+                    "text": "Supreme overload salve",
+                    "percent": 0
+                },
+                {
+                    "text": "Overload salve",
+                    "percent": 0
+                },
+                {
+                    "text": "Elder overload salve",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Antipoison",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw9w:Lily_Antipoison",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Your immunity to poison is about to expire",
+                    "percent": 100
+                },
+                {
+                    "text": "Your immunity to poison has expired",
+                    "percent": 100
+                },
+                {
+                    "text": "You drink some of your Antipoison",
+                    "percent": 0
+                },
+                {
+                    "text": "Elder overload salve",
+                    "percent": 0
+                },
+                {
+                    "text": "Overload salve",
+                    "percent": 0
+                },
+                {
+                    "text": "Supreme overload salve",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Prayer Renewal",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxag:Lily_Prayer Renewal",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "You drink some of your Super prayer renewal potion",
+                    "percent": 0
+                },
+                {
+                    "text": "You drink some of your Prayer renewal potion",
+                    "percent": 0
+                },
+                {
+                    "text": "Your prayer renewal will run out in 30 seconds",
+                    "percent": 100
+                },
+                {
+                    "text": "Your .",
+                    "percent": 100
+                },
+                {
+                    "text": "You drink some of your Super prayer renewal potion",
+                    "percent": 0
+                },
+                {
+                    "text": "You drink some of your Holy overload potion",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    0,
+                    101,
+                    252
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Relentless Perk",
+            "globalalarm": true,
+            "alarm": {
+                "sound": "upload:emw99:Lily_ImRelentless",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "Your Reientiess perk prevents your adrenaiine from being drained witn tnis",
+                    "percent": 100
+                },
+                {
+                    "text": "Your Relentless perk prevents your adrenaline from being drained with this ability",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    60,
+                    183,
+                    30
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Loot beam",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:edzqm:Healing Stream",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "golden beam shines over",
+                    "percent": 100
+                },
+                {
+                    "text": "rainbow shines over",
+                    "percent": 100
+                },
+                {
+                    "text": "festive beam shines over",
+                    "percent": 100
+                },
+                {
+                    "text": "sandcastle scene shines over",
+                    "percent": 100
+                },
+                {
+                    "text": "water spout sprays over",
+                    "percent": 100
+                },
+                {
+                    "text": "Hearts twirl over",
+                    "percent": 100
+                },
+                {
+                    "text": "You deal a critical strike against your opponent",
+                    "percent": 0
+                },
+                {
+                    "text": "You recharge your Prayer points",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    245,
+                    151,
+                    0
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Living Death Ends ",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:edscn:Deathstrike",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Your undead instinct fades",
+                    "percent": 100
+                },
+                {
+                    "text": "You deal a critical strike against your opponent",
+                    "percent": 0
+                },
+                {
+                    "text": "You recharge your Prayer points",
+                    "percent": 0
+                },
+                {
+                    "text": "You start to channel adrenaline from the crystal",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Prayer Points 0",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxae:Lily_Prayer Empty",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": false,
+            "stat": "pray",
+            "higherlower": "lower",
+            "treshold": 0,
+            "type": "actionbar"
+        },
+        {
+            "name": "Prayer Points 15%",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxam:Lily_Sip Prayer",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": false,
+            "stat": "pray",
+            "higherlower": "lower",
+            "treshold": 20,
+            "type": "actionbar"
+        },
+        {
+            "name": "Life Points 10%",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxa3:Heartbeat",
+                "repeat": true
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "stat": "hp",
+            "higherlower": "lower",
+            "treshold": 10,
+            "type": "actionbar"
+        },
+        {
+            "name": "Life Points 20%",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxak:Lily_Scream",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "stat": "hp",
+            "higherlower": "lower",
+            "treshold": 20,
+            "type": "actionbar"
+        },
+        {
+            "name": "Ultimate Cast",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:eda9b:Sweeping Strike",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "You are refunded 10% adrenaline from the relic power within",
+                    "percent": 100
+                },
+                {
+                    "text": "You deal a critical strike against your opponent",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Runes",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxab:Lily_NoRunes",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "This incantation requires additional payment",
+                    "percent": 100
+                },
+                {
+                    "text": "You fill your nexus from your inventory",
+                    "percent": 0
+                },
+                {
+                    "text": "rune to your nexus",
+                    "percent": 0
+                },
+                {
+                    "text": "runes to cast this spell",
+                    "percent": 100
+                },
+                {
+                    "text": "You store the following runes in your pouch",
+                    "percent": 0
+                },
+                {
+                    "text": "You recharge your Prayer points",
+                    "percent": 0
+                },
+                {
+                    "text": "You start to channel adrenaline from the crystal",
+                    "percent": 0
+                },
+                {
+                    "text": "You deal a critical strike against your opponent",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Ectoplasm ",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw95:Lily_Ectoplasm",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "This ability requires additional payment",
+                    "percent": 100
+                },
+                {
+                    "text": "Ectoplasm to your nexus",
+                    "percent": 0
+                },
+                {
+                    "text": "You fill your nexus from your inventory",
+                    "percent": 0
+                },
+                {
+                    "text": "You recharge your Prayer points",
+                    "percent": 0
+                },
+                {
+                    "text": "You start to channel adrenaline from the crystal",
+                    "percent": 0
+                },
+                {
+                    "text": "You deal a critical strike against your opponent",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Divine Charge",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emw94:Lily_Divine Charge",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "You have fewer than 60 minutes of charge remaining in your charge pack",
+                    "percent": 100
+                },
+                {
+                    "text": "You have fewer than 30 minutes of charge remaining in your charge pack",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        }
+    ]
+}
