@@ -114,3 +114,9 @@ Added Alerts & Fixes
 -	Added Ectoplasm Alert when you’re out of ectoplasm
 -	Added Divine Charge Pack Alert when you’re less then 60 & 30 min of Divine Charge
 
+September 17th 2024
+
+Female Voice Alerts Added!INTRODUCING LILY!
+
+Patch v1.0.4 Female
+-Fixed Summoning points from Male to female voice
