@@ -1,331 +1,576 @@
 {
-  "name": "Archaeology Alerts 1.02",
-  "baseName": "archaeology",
-  "alerters": [
-    {
-      "name": "Lobby timer",
-      "globalalarm": false,
-      "alarm": {
-        "sound": "upload:ec8ut:RuneScape 3 Main Theme",
-        "repeat": false
-      },
-      "voice": null,
-      "tooltip": "About to get lobbied",
-      "exportbar": true,
-      "delay": 830,
-      "type": "inactive"
-    },
-    {
-      "name": "Full inventory",
-      "globalalarm": false,
-      "alarm": { "sound": "upload:edda3:Inventory Full Male", "repeat": false },
-      "voice": null,
-      "tooltip": "Full inventory",
-      "exportbar": true,
-      "resetonactive": true,
-      "lines": [{ "text": "enough inventory space", "percent": 100 }],
-      "colors": [
-        [255, 255, 255],
-        [127, 169, 255]
-      ],
-      "type": "chat"
-    },
-    {
-      "name": "Artefact",
-      "globalalarm": false,
-      "alarm": { "sound": "upload:ec978:Artefact", "repeat": false },
-      "voice": null,
-      "tooltip": "Artefact",
-      "exportbar": true,
-      "type": "dialogtextsimple"
-    },
-    {
-      "name": "Time sprite",
-      "globalalarm": true,
-      "alarm": null,
-      "voice": null,
-      "tooltip": "Time sprite",
-      "exportbar": true,
-      "resetonactive": true,
-      "lines": [{ "text": "time sprite", "percent": 100 }],
-      "colors": [
-        [255, 255, 255],
-        [127, 169, 255]
-      ],
-      "type": "chat"
-    },
-    {
-      "name": "Seren spirit",
-      "globalalarm": false,
-      "alarm": null,
-      "voice": null,
-      "tooltip": "Seren spirit",
-      "exportbar": true,
-      "resetonactive": true,
-      "lines": [{ "text": "A Seren spirit appears", "percent": 100 }],
-      "colors": [[0, 255, 255]],
-      "type": "chat"
-    },
-    {
-      "name": "Sign of the porter",
-      "globalalarm": false,
-      "alarm": { "sound": "upload:edftm:Metal Clash", "repeat": false },
-      "voice": null,
-      "tooltip": "Sign of the porter",
-      "exportbar": true,
-      "resetonactive": false,
-      "lines": [
-        { "text": "Your sign of the porter has been activated", "percent": 0 },
-        { "text": "Your Active sign of the porter", "percent": 100 },
+    "name": "Archaeology Alerts 1.0.1",
+    "baseName": "archaeology",
+    "alerters": [
         {
-          "text": "The porter functionality of Grace of the elves has been enabled",
-          "percent": 0
-        },
-        { "text": "Your auto-screener spits out ", "percent": 0 },
-        {
-          "text": "Your Grace of the elves has run out of porter charges",
-          "percent": 100
-        },
-        { "text": "You find some ", "percent": 0 }
-      ],
-      "colors": [
-        [255, 255, 255],
-        [193, 15, 6]
-      ],
-      "type": "chat"
-    },
-    {
-      "name": "Imp-Souled Perk",
-      "globalalarm": false,
-      "alarm": { "sound": "upload:eddbz:Coin Pickup", "repeat": false },
-      "voice": null,
-      "tooltip": null,
-      "exportbar": true,
-      "resetonactive": true,
-      "lines": [
-        {
-          "text": "Your imp-souled perk transports your items to your Archaeology material",
-          "percent": 100
-        },
-        { "text": "Your auto-screener spits out some", "percent": 0 },
-        { "text": "transport the ", "percent": 0 },
-        { "text": "You find some ", "percent": 0 }
-      ],
-      "colors": [
-        [0, 255, 0],
-        [255, 255, 255]
-      ],
-      "type": "chat"
-    },
-    {
-      "name": "Fortune Perk",
-      "globalalarm": true,
-      "alarm": { "sound": "upload:eddbr:Coin Burst", "repeat": false },
-      "voice": null,
-      "tooltip": null,
-      "exportbar": true,
-      "resetonactive": true,
-      "lines": [
-        { "text": "Your Fortune perk", "percent": 100 },
-        { "text": "Your auto-screener spits out some", "percent": 0 }
-      ],
-      "colors": [
-        [60, 183, 30],
-        [255, 255, 255]
-      ],
-      "type": "chat"
-    },
-    {
-      "name": "",
-      "globalalarm": false,
-      "alarm": null,
-      "voice": null,
-      "tooltip": null,
-      "exportbar": false,
-      "type": "dialogtextsimple"
-    },
-    {
-      "name": "Prayer Alert",
-      "globalalarm": false,
-      "alarm": { "sound": "upload:ec8rk:Prayer Low", "repeat": false },
-      "voice": null,
-      "tooltip": null,
-      "exportbar": true,
-      "stat": "pray",
-      "higherlower": "lower",
-      "treshold": 50,
-      "type": "actionbar"
-    },
-    {
-      "name": "Summoning Alert",
-      "globalalarm": false,
-      "alarm": { "sound": "upload:edba2:Light Spark", "repeat": false },
-      "voice": null,
-      "tooltip": null,
-      "exportbar": true,
-      "stat": "sum",
-      "higherlower": "lower",
-      "treshold": 20,
-      "type": "actionbar"
-    },
-    {
-      "name": "Familiar Timer",
-      "globalalarm": false,
-      "alarm": { "sound": "upload:ec92m:Familiar", "repeat": false },
-      "voice": null,
-      "tooltip": null,
-      "exportbar": true,
-      "resetonactive": false,
-      "lines": [
-        {
-          "text": "You have 1 minute before your famiiiar vanishes",
-          "percent": 100
+            "name": "Lobby timer",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:ec8ut:RuneScape 3 Main Theme",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": "About to get lobbied",
+            "exportbar": true,
+            "delay": 830,
+            "type": "inactive"
         },
         {
-          "text": "You have 30 seconds before your famiiiar vanishes",
-          "percent": 0
+            "name": "Full inventory",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:edda3:Inventory Full Male",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": "Full inventory",
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "enough inventory space",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Artefact",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:ec978:Artefact",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": "Artefact",
+            "exportbar": true,
+            "type": "dialogtextsimple"
+        },
+        {
+            "name": "Time sprite",
+            "globalalarm": true,
+            "alarm": null,
+            "voice": null,
+            "tooltip": "Time sprite",
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "time sprite",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Seren spirit",
+            "globalalarm": false,
+            "alarm": null,
+            "voice": null,
+            "tooltip": "Seren spirit",
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "A Seren spirit appears",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    0,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Sign of the porter",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:edftm:Metal Clash",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": "Sign of the porter",
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "Your sign of the porter has been activated",
+                    "percent": 0
+                },
+                {
+                    "text": "Your Active sign of the porter",
+                    "percent": 100
+                },
+                {
+                    "text": "The porter functionality of Grace of the elves has been enabled",
+                    "percent": 0
+                },
+                {
+                    "text": "Your auto-screener spits out ",
+                    "percent": 0
+                },
+                {
+                    "text": "Your Grace of the elves has run out of porter charges",
+                    "percent": 100
+                },
+                {
+                    "text": "You find some ",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    193,
+                    15,
+                    6
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Imp-Souled Perk",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:eddbz:Coin Pickup",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "Your imp-souled perk transports your items to your Archaeology material",
+                    "percent": 100
+                },
+                {
+                    "text": "Your auto-screener spits out some",
+                    "percent": 0
+                },
+                {
+                    "text": "transport the ",
+                    "percent": 0
+                },
+                {
+                    "text": "You find some ",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    0,
+                    255,
+                    0
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Fortune Perk",
+            "globalalarm": true,
+            "alarm": {
+                "sound": "upload:eddbr:Coin Burst",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "Your Fortune perk",
+                    "percent": 100
+                },
+                {
+                    "text": "Your auto-screener spits out some",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    60,
+                    183,
+                    30
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "",
+            "globalalarm": false,
+            "alarm": null,
+            "voice": null,
+            "tooltip": null,
+            "exportbar": false,
+            "type": "dialogtextsimple"
+        },
+        {
+            "name": "Prayer Alert",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:ec8rk:Prayer Low",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "stat": "pray",
+            "higherlower": "lower",
+            "treshold": 50,
+            "type": "actionbar"
+        },
+        {
+            "name": "Summoning Alert",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:edba2:Light Spark",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "stat": "sum",
+            "higherlower": "lower",
+            "treshold": 20,
+            "type": "actionbar"
+        },
+        {
+            "name": "Familiar Timer",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:ec92m:Familiar",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "You have 1 minute before your famiiiar vanishes",
+                    "percent": 100
+                },
+                {
+                    "text": "You have 30 seconds before your famiiiar vanishes",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    235,
+                    47,
+                    47
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Incense Sticks",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:ec8s8:Incense Sticks",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": false,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "The effects have ended for",
+                    "percent": 100
+                },
+                {
+                    "text": "Your auto-screener spits out ",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    127,
+                    169,
+                    255
+                ],
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "",
+            "globalalarm": true,
+            "alarm": null,
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [],
+            "colors": [],
+            "type": "chat"
+        },
+        {
+            "name": "Archaeologist's tea",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:edd7g:Tea Cup",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "After drinking the tea you feel relaxed and you will now gain a 50",
+                    "percent": 0
+                },
+                {
+                    "text": "Your archaeologist's tea boost has worn off",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Tarpaulin Sheet",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:edd7h:Leather Working",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "After placing down a tarpaulin sheet you will now gain a 10% greater",
+                    "percent": 0
+                },
+                {
+                    "text": "Your tarpaulin sheet boost has worn off",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Hi-spec monocle",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:edd7k:Gem",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "After wearing the hi-spec monocle you feel incredibiy focused and will now",
+                    "percent": 0
+                },
+                {
+                    "text": "Your hi-spec monocle boost has worn off",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Material Manual",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:edd7m:Page Turn",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "After reading the manual you will now have an increased chance of finding",
+                    "percent": 0
+                },
+                {
+                    "text": "Your material manual boost has worn off",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "XP Capacitor 5000 (Charging)",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:edd7n:Mech Shutdown",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": false,
+            "lines": [
+                {
+                    "text": "You activate the XP Capacitor 5000 ",
+                    "percent": 0
+                },
+                {
+                    "text": "Your XP capacitor has reached full charge",
+                    "percent": 100
+                }
+            ],
+            "colors": [
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    255,
+                    255,
+                    0
+                ]
+            ],
+            "type": "chat"
+        },
+        {
+            "name": "Screening / Restoring",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:ededu:Armor Craft",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "triggerpercent": 100,
+            "type": "craftmenu"
+        },
+        {
+            "name": "Balarak's Sash Brush ",
+            "globalalarm": false,
+            "alarm": {
+                "sound": "upload:emxat:Devotion_Aura",
+                "repeat": false
+            },
+            "voice": null,
+            "tooltip": null,
+            "exportbar": true,
+            "resetonactive": true,
+            "lines": [
+                {
+                    "text": "Balarak's sash brush resonates",
+                    "percent": 100
+                },
+                {
+                    "text": "Your auto-screener spits out some Hellfire metal",
+                    "percent": 0
+                }
+            ],
+            "colors": [
+                [
+                    0,
+                    255,
+                    0
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "type": "chat"
         }
-      ],
-      "colors": [
-        [255, 255, 255],
-        [127, 169, 255],
-        [235, 47, 47]
-      ],
-      "type": "chat"
-    },
-    {
-      "name": "Incense Sticks",
-      "globalalarm": false,
-      "alarm": { "sound": "upload:ec8s8:Incense Sticks", "repeat": false },
-      "voice": null,
-      "tooltip": null,
-      "exportbar": false,
-      "resetonactive": false,
-      "lines": [
-        { "text": "The effects have ended for", "percent": 100 },
-        { "text": "Your auto-screener spits out ", "percent": 0 }
-      ],
-      "colors": [
-        [255, 255, 255],
-        [127, 169, 255],
-        [255, 0, 0]
-      ],
-      "type": "chat"
-    },
-    {
-      "name": "",
-      "globalalarm": true,
-      "alarm": null,
-      "voice": null,
-      "tooltip": null,
-      "exportbar": true,
-      "resetonactive": false,
-      "lines": [],
-      "colors": [],
-      "type": "chat"
-    },
-    {
-      "name": "Archaeologist's tea",
-      "globalalarm": false,
-      "alarm": { "sound": "upload:edd7g:Tea Cup", "repeat": false },
-      "voice": null,
-      "tooltip": null,
-      "exportbar": true,
-      "resetonactive": false,
-      "lines": [
-        {
-          "text": "After drinking the tea you feel relaxed and you will now gain a 50",
-          "percent": 0
-        },
-        {
-          "text": "Your archaeologist's tea boost has worn off",
-          "percent": 100
-        }
-      ],
-      "colors": [[255, 255, 255]],
-      "type": "chat"
-    },
-    {
-      "name": "Tarpaulin Sheet",
-      "globalalarm": false,
-      "alarm": { "sound": "upload:edd7h:Leather Working", "repeat": false },
-      "voice": null,
-      "tooltip": null,
-      "exportbar": true,
-      "resetonactive": false,
-      "lines": [
-        {
-          "text": "After placing down a tarpaulin sheet you will now gain a 10% greater",
-          "percent": 0
-        },
-        { "text": "Your tarpaulin sheet boost has worn off", "percent": 100 }
-      ],
-      "colors": [[255, 255, 255]],
-      "type": "chat"
-    },
-    {
-      "name": "Hi-spec monocle",
-      "globalalarm": false,
-      "alarm": { "sound": "upload:edd7k:Gem", "repeat": false },
-      "voice": null,
-      "tooltip": null,
-      "exportbar": true,
-      "resetonactive": false,
-      "lines": [
-        {
-          "text": "After wearing the hi-spec monocle you feel incredibiy focused and will now",
-          "percent": 0
-        },
-        { "text": "Your hi-spec monocle boost has worn off", "percent": 100 }
-      ],
-      "colors": [[255, 255, 255]],
-      "type": "chat"
-    },
-    {
-      "name": "Material Manual",
-      "globalalarm": false,
-      "alarm": { "sound": "upload:edd7m:Page Turn", "repeat": false },
-      "voice": null,
-      "tooltip": null,
-      "exportbar": true,
-      "resetonactive": false,
-      "lines": [
-        {
-          "text": "After reading the manual you will now have an increased chance of finding",
-          "percent": 0
-        },
-        { "text": "Your material manual boost has worn off", "percent": 100 }
-      ],
-      "colors": [[255, 255, 255]],
-      "type": "chat"
-    },
-    {
-      "name": "XP Capacitor 5000 (Charging)",
-      "globalalarm": false,
-      "alarm": { "sound": "upload:edd7n:Mech Shutdown", "repeat": false },
-      "voice": null,
-      "tooltip": null,
-      "exportbar": true,
-      "resetonactive": false,
-      "lines": [
-        { "text": "You activate the XP Capacitor 5000 ", "percent": 0 },
-        { "text": "Your XP capacitor has reached full charge", "percent": 100 }
-      ],
-      "colors": [
-        [255, 255, 255],
-        [255, 255, 0]
-      ],
-      "type": "chat"
-    },
-    {
-      "name": "Screening / Restoring",
-      "globalalarm": false,
-      "alarm": { "sound": "upload:ededu:Armor Craft", "repeat": false },
-      "voice": null,
-      "tooltip": null,
-      "exportbar": true,
-      "triggerpercent": 100,
-      "type": "craftmenu"
-    }
-  ]
+    ]
 }
