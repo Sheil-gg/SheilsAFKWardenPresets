@@ -120,7 +120,7 @@ Female Voice Alerts Added!INTRODUCING LILY!
 
 October 9th 2024
 Patch v1.0.4 Female
--Fixed Summoning points from Male to female voice
+-   Fixed Summoning points from Male to female voice
 
 Patch v1.0.1 Archeaology Alerts
--Included Balarak's Sash Brush alert
+-   Included Balarak's Sash Brush alert
